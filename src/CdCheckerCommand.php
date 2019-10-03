@@ -165,12 +165,19 @@ final class CdCheckerCommand extends Command
 
             if ($this->format !== 'json') {
                 $this->output->write(str_pad('', $filesPerLine - $chunkFiles));
-                $this->output->writeln('  ' . str_pad(
+                $this->output->writeln(
+                    '  ' .
+                    str_pad(
                         (string)$processed,
                         $fileCountLength,
                         ' ',
                         STR_PAD_LEFT
-                    ) . '/' . $totalFiles . ' (' . floor((100 / $totalFiles) * $processed) . '%)');
+                    ) .
+                    '/' .
+                    $totalFiles .
+                    ' (' . floor((100 / $totalFiles) * $processed) .
+                    '%)'
+                );
             }
         }
 

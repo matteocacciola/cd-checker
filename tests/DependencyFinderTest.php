@@ -16,7 +16,9 @@ class DependencyFinderTest extends TestCase
     private $dependencyFinder;
 
     /**
-     * setup/construct test.
+     * Setup / construct test.
+     *
+     * @return void
      */
     public function setUp()
     {
@@ -24,13 +26,14 @@ class DependencyFinderTest extends TestCase
     }
 
     /**
-     * test process file with file info false.
+     * Test process file with file info false.
+     *
+     * @return void
      */
     public function testProcessFileWithSplFileInfoFalseExpectRuntimeException()
     {
         $this->expectException(RuntimeException::class);
 
-        /** @var SplFileInfo|MockObject $splFileInfo */
         $splFileInfo = $this->createMock(SplFileInfo::class);
         $splFileInfo->method('getRealPath')
             ->willReturn(false);
