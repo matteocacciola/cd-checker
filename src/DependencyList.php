@@ -13,7 +13,7 @@ final class DependencyList
     private $dependencies = [];
 
     /**
-     * @param Dependency $dependency    Dependency
+     * @param Dependency $dependency Dependency
      */
     public function add(Dependency $dependency): void
     {
@@ -21,7 +21,7 @@ final class DependencyList
     }
 
     /**
-     * @return Dependency[]
+     * @return Dependency[] The dependencies
      */
     public function all(): array
     {

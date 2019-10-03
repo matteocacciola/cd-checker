@@ -89,7 +89,7 @@ final class CdCheckerCommand extends Command
      * Execute the actual checker.
      *
      * @param InputInterface $input Input
-     * @param OutputInterface $output   Output
+     * @param OutputInterface $output Output
      *
      * @return int
      */
@@ -125,7 +125,7 @@ final class CdCheckerCommand extends Command
      * Check files.
      *
      * @param InputInterface $input Input
-     * @param SplFileInfo[] $files  Files
+     * @param SplFileInfo[] $files Files
      *
      * @return int Total files
      */
@@ -145,9 +145,9 @@ final class CdCheckerCommand extends Command
     /**
      * Process files.
      *
-     * @param SplFileInfo[] $files  Files
+     * @param SplFileInfo[] $files Files
      * @param int $filesPerLine Total fFiles per line
-     * @param int $totalFiles   Total files
+     * @param int $totalFiles Total files
      *
      * @return int Processed
      */
@@ -166,11 +166,11 @@ final class CdCheckerCommand extends Command
             if ($this->format !== 'json') {
                 $this->output->write(str_pad('', $filesPerLine - $chunkFiles));
                 $this->output->writeln('  ' . str_pad(
-                    (string)$processed,
-                    $fileCountLength,
-                    ' ',
-                    STR_PAD_LEFT
-                ) . '/' . $totalFiles . ' (' . floor((100 / $totalFiles) * $processed) . '%)');
+                        (string)$processed,
+                        $fileCountLength,
+                        ' ',
+                        STR_PAD_LEFT
+                    ) . '/' . $totalFiles . ' (' . floor((100 / $totalFiles) * $processed) . '%)');
             }
         }
 
@@ -180,7 +180,7 @@ final class CdCheckerCommand extends Command
     /**
      * Process chunk files.
      *
-     * @param SplFileInfo[] $chunk  Chunk of file
+     * @param SplFileInfo[] $chunk Chunk of file
      *
      * @return int Processed
      */
@@ -209,8 +209,8 @@ final class CdCheckerCommand extends Command
     /**
      * Process options.
      *
-     * @param InputInterface $input     Input
-     * @param OutputInterface $output   Output
+     * @param InputInterface $input Input
+     * @param OutputInterface $output Output
      *
      * @return void
      */
@@ -240,7 +240,7 @@ final class CdCheckerCommand extends Command
     /**
      * Print application name.
      *
-     * @param OutputInterface $output   Output
+     * @param OutputInterface $output Output
      *
      * @return void
      */
@@ -254,8 +254,8 @@ final class CdCheckerCommand extends Command
     /**
      * Print legend.
      *
-     * @param bool $errors      Errors
-     * @param bool $warnings    Warnings
+     * @param bool $errors Errors
+     * @param bool $warnings Warnings
      *
      * @return void
      */
@@ -274,8 +274,8 @@ final class CdCheckerCommand extends Command
      * Print verbose result.
      *
      * @param InputInterface $input Input
-     * @param float $startTime  Start time
-     * @param int $totalFiles   Total files
+     * @param float $startTime Start time
+     * @param int $totalFiles Total files
      *
      * @return void
      */

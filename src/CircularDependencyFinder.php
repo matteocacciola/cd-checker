@@ -40,7 +40,7 @@ final class CircularDependencyFinder
     /**
      * Process classes.
      *
-     * @param ClassDependency[] $classDependencies  Class dependency
+     * @param ClassDependency[] $classDependencies Class dependency
      *
      * @return void
      */
@@ -52,8 +52,10 @@ final class CircularDependencyFinder
     }
 
     /**
-     * @param array           $classDependencies    Array of class dependency
-     * @param ClassDependency $classDependency      Class dependency
+     * Find circular dependencies.
+     *
+     * @param array $classDependencies Array of class dependency
+     * @param ClassDependency $classDependency Class dependency
      */
     private function findCircularDependencies(array $classDependencies, ClassDependency $classDependency): void
     {
