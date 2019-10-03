@@ -16,7 +16,7 @@ class DependencyFinderTest extends TestCase
     private $dependencyFinder;
 
     /**
-     * setup/construct test
+     * setup/construct test.
      */
     public function setUp()
     {
@@ -24,7 +24,7 @@ class DependencyFinderTest extends TestCase
     }
 
     /**
-     * test process file with file info false
+     * test process file with file info false.
      */
     public function testProcessFileWithSplFileInfoFalseExpectRuntimeException()
     {
