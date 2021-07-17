@@ -26,7 +26,7 @@ Detection of circular dependencies between:
 ## Installation
 
 ```
-composer require selective/cd-checker
+composer require matteocacciola/cd-checker
 ```
 
 ## Usage
