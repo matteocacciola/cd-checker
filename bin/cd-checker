@@ -13,8 +13,8 @@ if (!(class_exists('Composer\\Autoload\\ClassLoader', false))) {
     }
 }
 
-$command = new Odan\DocBlockChecker\CheckerCommand();
+$command = new \DataMat\CdChecker\CdCheckerCommand();
 
-$application = new Odan\DocBlockChecker\CheckerApplication('Docblock Checker');
+$application = new \DataMat\CdChecker\CdCheckerApplication('Circular Dependencies Checker');
 $application->add($command);
 $application->run();
