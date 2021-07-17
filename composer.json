@@ -1,5 +1,5 @@
 {
-    "name": "selective/cd-checker",
+    "name": "matteocacciola/cd-checker",
     "type": "library",
     "description": "Circular dependency checker",
     "keywords": [
@@ -13,7 +13,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.2",
-        "symfony/console": "^2.8|^3.0|^4.0"
+        "symfony/console": "^5"
     },
     "require-dev": {
         "mikey179/vfsstream": "^1.6",
@@ -44,12 +44,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Selective\\CdChecker\\": "src"
+            "DataMat\\CdChecker\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Selective\\CdChecker\\Test\\": "tests"
+            "DataMat\\CdChecker\\Test\\": "tests"
         }
     },
     "config": {

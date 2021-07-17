@@ -1,6 +1,6 @@
 <?php
 
-namespace Selective\CdChecker;
+namespace DataMat\CdChecker;
 
 use RuntimeException;
 use SplFileInfo;
@@ -60,7 +60,7 @@ final class CdCheckerCommand extends Command
     /**
      * Configure the console command, add options, etc.
      */
-    protected function configure()
+    protected function configure() : void
     {
         $this
             ->setName('check')
@@ -93,7 +93,7 @@ final class CdCheckerCommand extends Command
      *
      * @return int
      */
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output) : int
     {
         // Process options
         $this->processOptions($input, $output);

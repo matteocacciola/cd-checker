@@ -1,6 +1,6 @@
 <?php
 
-namespace Selective\CdChecker;
+namespace DataMat\CdChecker;
 
 use Symfony\Component\Console\Application;
 use Symfony\Component\Console\Input\InputInterface;
@@ -17,7 +17,7 @@ final class CdCheckerApplication extends Application
      *
      * @return string
      */
-    protected function getCommandName(InputInterface $input)
+    protected function getCommandName(InputInterface $input) : string
     {
         return 'check';
     }
@@ -26,7 +26,7 @@ final class CdCheckerApplication extends Application
      * Overridden so that the application doesn't expect the command
      * name to be the first argument.
      */
-    public function getDefinition()
+    public function getDefinition() : \Symfony\Component\Console\Input\InputDefinition
     {
         $inputDefinition = parent::getDefinition();
         // clear out the normal first argument, which is the command name

@@ -1,6 +1,6 @@
 <?php
 
-namespace Selective\CdChecker;
+namespace DataMat\CdChecker;
 
 use DirectoryIterator;
 use SplFileInfo;
